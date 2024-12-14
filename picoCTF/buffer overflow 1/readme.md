@@ -67,13 +67,7 @@ b) Nhận xét
 
 - Stack ghi từ địa chỉ thấp lên địa chỉ cao (ở đây là từ dưới lên trên) nên ta sẽ ghi 32 ký tự để ghi đè biến buf + 4 ký tự ghi đè EBP. 36 ký tự này gọi là padding. Sau đó ta cần ghi đè địa chỉ của return address bằng địa chỉ của hàm win
 - Trên lý thuyết là vậy nhưng thật ra padding sẽ khác (do sự căn chỉnh stack, do compiler hoặc do người ra đề cố tình sửa padding stack) vì vậy thay vì tính bằng tay thì ta nên dùng công cụ. Ở đây mình dùng https://zerosum0x0.blogspot.com/2016/11/overflow-exploit-pattern-generator.html
-- Đầu tiên ta Generate ra 100 ký tự rồi chạy trong GDB bằng câu lệnh
 
-```cpp
-run < <(echo -ne "Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac9Ad0Ad1Ad2A")
-```
-
-![image.png](image%201.png)
 
 ## 3. Tiến hành khai thác
 
