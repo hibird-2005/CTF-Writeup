@@ -73,7 +73,7 @@ b) Nhận xét
 ## 2. Ý tưởng khai thác
 
 - Khi code có giá trị bằng GOAL (tức là 0xdeadbeef) thì flag sẽ được in ra
-- Mỗi khi chương trình chạy thì hệ điều hành sẽ cung cấp cho chương trình một vùng nhớ trên RAM dùng để lưu trữ các biến nội bộ, các giá trị trở về (giá trị của EIP), giá trị các thanh ghi,… gọi là vùng nhớ stack. Ở bài này, mô hình stack  trông như sau:
+- Mỗi khi chương trình chạy thì hệ điều hành sẽ cung cấp cho chương trình một vùng nhớ trên RAM dùng để lưu trữ các biến nội bộ, các giá trị trở về (giá trị của RIP), giá trị các thanh ghi,… gọi là vùng nhớ stack. Ở bài này, mô hình stack  trông như sau:
 
 ![image.png](image8.png)
 
