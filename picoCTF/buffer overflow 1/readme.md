@@ -59,9 +59,9 @@ b) Nhận xét
 
 ## 2. Ý tưởng khai thác
 
-- Chỉ khi chạy hàm win thì flag mới được in ra, vậy chúng ta phải gọi được hàm win. Ở đây hàm win không được gọi đến nhưng chúng ta có thể gọi đến nó bằng cách ghi đè địa chỉ trở về (return address) vào thanh ghi EIP
+- Chỉ khi chạy hàm win thì flag mới được in ra, vậy chúng ta phải gọi được hàm win. Ở đây hàm win không được gọi đến nhưng chúng ta có thể gọi đến nó bằng cách ghi đè địa chỉ trở về (return address) vào stack tại ô nhớ ghi địa chỉ trả về. Mỗi khi chương trình chạy thì hệ điều hành sẽ cung cấp cho chương trình một vùng nhớ trên RAM dùng để lưu trữ các biến nội bộ, các giá trị trở về (giá trị của EIP), giá trị các thanh ghi,… gọi là vùng nhớ stack. 
 - Thanh ghi EIP (trong kiến trúc 16 bit gọi là thanh ghi IP, trong kiến trúc 32 bit gọi là EIP, trong kiến trúc 64 bit gọi là RIP) là thanh ghi con trỏ lệnh, nó dùng để lưu địa chỉ của câu lệnh tiếp theo được thực hiện.
-- Mỗi khi chương trình chạy thì hệ điều hành sẽ cung cấp cho chương trình một vùng nhớ trên RAM dùng để lưu trữ các biến nội bộ, các giá trị trở về (giá trị của EIP), giá trị các thanh ghi,… gọi là vùng nhớ stack. Ở bài này, mô hình stack (tại hàm vuln) trông như sau:
+- Ở bài này, mô hình stack (tại hàm vuln) trông như sau:
 
 ![image.png](image.png)
 
