@@ -128,7 +128,7 @@ c) Bước 3: Viết payload
 ```
 
 - Cách 2: dùng file thực thi
-+ Ta tạo file python thực thi:
+  + Ta tạo file python thực thi:
 
 ```cpp
 from pwn import *
@@ -145,5 +145,5 @@ p.interactive()
 
 ## 4. Kết luận
 
-- Địa chỉ return address trong stack bị ghi đè bởi buffer overflow, nhưng nó chỉ được thực thi khi hàm ret được gọi
+- Địa chỉ return address trong stack bị ghi đè bởi buffer overflow, nhưng nó chỉ được thực thi khi câu lệnh ret được gọi
 - Hiểu được cấu trúc hoàn chỉnh của một stack và cấu trúc stack khi gọi hàm
