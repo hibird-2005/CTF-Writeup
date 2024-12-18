@@ -96,8 +96,8 @@ mov ebp, esp
 ```
 
 - Lưu ý rằng: PUSH là thao tác đưa một đối tượng vào ngăn xếp. Trong cấu trúc Intel x86 32 bit, khi ta đưa một giá trị vào ngăn xếp thì CPU sẽ tuần tự thực hiện hai thao thác nhỏ:
-+ ESP được gán giá trị ESP - 4, tức giá trị của ESP sẽ bị giảm đi 4.
-+ Đối số của lệnh PUSH được chuyển vào 4 byte trong bộ nhớ bắt đầu từ địa chỉ do ESP xác định.
+   + ESP được gán giá trị ESP - 4, tức giá trị của ESP sẽ bị giảm đi 4.
+   + Đối số của lệnh PUSH được chuyển vào 4 byte trong bộ nhớ bắt đầu từ địa chỉ do ESP xác định.
 (lệnh POP cũng tương tự)
 - Hình vẽ sau (chỉ mang tính minh họa) miêu tả trạng thái của stack ban đầu và stack sau 2 câu lệnh đó:
 
