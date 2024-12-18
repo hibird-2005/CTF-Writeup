@@ -3,7 +3,7 @@
 - **Phân loại:** Pwnable
 - **Độ khó:** Easy
 - Tool: GDB-peda
-- Kiến thức: stack, thanh ghi
+- Kiến thức: stack, thanh ghi, stack alignment
 
 ## 1. Phân tích bài
 
